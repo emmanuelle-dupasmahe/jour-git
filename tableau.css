@@ -1,0 +1,73 @@
+/* pour la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 40px;
+    color: #240ee8;
+}
+/*pour le titre*/
+h1 {
+    color:rgb(92, 11, 241);
+    text-align:center;
+}
+/* pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+/* pour les en-têtes de tableau */
+thead {
+    background-color: #007bff;
+    color: #f6f1ec;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* pour les cellules du corps du tableau */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+/*pour que la première colonne soit plus large*/
+tbody tr td:first-child {
+    font-weight: bold;
+    width: 20%; 
+}
+/* Alterner les couleurs des lignes */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Effet de survol sur les lignes */
+tbody tr:hover {
+    background-color: #70b1f3;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Ajustement pour les bords de la première et dernière cellule */
+tbody tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+}
+
+tbody tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
